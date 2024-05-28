@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Bebrios</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #000000, transparent, #000000), url('background.gif') center no-repeat; /* Градиент от черного к прозрачному и обратно, с GIF по центру */
+            background-size: 50%; /* Уменьшаем размер GIF до 50% от оригинального */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .photo {
+            width: 200px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 0 20px;
+            border: 2px solid black;
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">ROMAN BEBRIOS</div>
+    <div class="container">
+        <div class="photo" id="photo1"></div>
+        <div class="photo" id="photo2"></div>
+        <div class="photo" id="photo3"></div>
+    </div>
+    <script>
+        document.getElementById('photo1').style.backgroundImage = "url('photo1.jpg')"; // Замените 'photo1.jpg' на путь к вашему изображению
+        document.getElementById('photo2').style.backgroundImage = "url('photo2.jpg')"; // Замените 'photo2.jpg' на путь к вашему изображению
+        document.getElementById('photo3').style.backgroundImage = "url('photo3.jpg')"; // Замените 'photo3.jpg' на путь к вашему изображению
+    </script>
+</body>
+</html>
